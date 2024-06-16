@@ -3,74 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josephine Paysanidou</title>
+    <title>Προσωπική Ιστοσελίδα - Josephine Paysanidou</title>
     <style>
-        body {
-            font-family: 'Wask', sans-serif;
-            line-height: 1.6;
+        /* Στυλιστικός κώδικας για την ιστοσελίδα */
+
+        /* Reset default margin and padding */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
+
         header {
             background: #333;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
+            padding: 20px 0;
+            text-align: center;
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
+
         header #branding h1 {
             margin: 0;
         }
-        header nav {
-            float: right;
-            margin-top: 10px;
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
         }
-        .bio {
-            margin: 20px 0;
+
+        header nav ul li {
+            display: inline-block;
+            margin-right: 20px;
         }
-        .bio h2 {
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 20px 0;
+        }
+
+        section h2 {
             color: #333;
+            font-size: 24px;
         }
-        .bio p {
-            font-size: 1.1em;
-        }
+
         footer {
             background: #333;
             color: #fff;
             text-align: center;
             padding: 20px 0;
             margin-top: 20px;
-        }
-        @media (max-width: 768px) {
-            header #branding, header nav, header nav ul, header nav ul li {
-                float: none;
-                text-align: center;
-                width: 100%;
-            }
         }
     </style>
 </head>
@@ -79,27 +77,46 @@
         <div class="container">
             <div id="branding">
                 <h1>Josephine Paysanidou</h1>
+                <p>Γυναίκα, Μητέρα, Ποδοσφαιριστής</p>
             </div>
             <nav>
                 <ul>
-                    <li><a href="https://www.facebook.com/zozefina">Facebook</a></li>
+                    <li><a href="#about">Σχετικά</a></li>
+                    <li><a href="#hobbies">Χόμπι</a></li>
+                    <li><a href="#career">Επαγγελματική Πορεία</a></li>
+                    <li><a href="#contact">Επικοινωνία</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <div class="container">
-        <section class="bio">
-            <h2>About Me</h2>
-            <p>My name is Josephine Paysanidou, and I live in Athens, Greece. I am a flexible, creative, and multitasking individual. I can help build websites and decorate homes. I am also an accomplished football player.</p>
-            <p>I am the owner of the website <strong>ΚΕΠhelp</strong>, a platform designed to assist citizens with government issues and administrative purposes like taxation, residency permits, business licensing, social security, and more.</p>
-            <p>I graduated from the Athens University of Economics and Business and also studied as an exchange student at The Hague University. Since my early years, I have had significant successes in basketball, football, and athletics. In recent years, I have focused on football and currently play in the second division of Greece.</p>
-            <p>I am married to a Hellenic Air Force pilot. Additionally, I am a certified soccer coach for developmental ages with a UEFA C diploma.</p>
-        </section>
-    </div>
+    <section id="about" class="container">
+        <h2>Σχετικά</h2>
+        <p>Γεια σας! Είμαι η Josephine Paysanidou από την Αθήνα. Είμαι μητέρα δύο παιδιών και αγαπώ το ποδόσφαιρο.</p>
+        <p>Είμαι ιδιοκτήτρια της ιστοσελίδας <strong>ΚΕΠhelp</strong>, η οποία προσφέρει βοήθεια σε πολίτες για διοικητικά θέματα.</p>
+    </section>
+
+    <section id="hobbies" class="container">
+        <h2>Χόμπι</h2>
+        <p>Πέρα από το ποδόσφαιρο, ασχολούμαι επίσης με την διακόσμηση σπιτιών και την αθλητική δραστηριότητα.</p>
+    </section>
+
+    <section id="career" class="container">
+        <h2>Επαγγελματική Πορεία</h2>
+        <p>Σπούδασα στο Οικονομικό Πανεπιστήμιο Αθηνών και αντάλλαξα φοιτητικά με το Πανεπιστήμιο της Χάγης.</p>
+        <p>Είμαι πιστοποιημένη προπονήτρια ποδοσφαίρου με δίπλωμα UEFA C.</p>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Επικοινωνία</h2>
+        <p>Email: josephine@example.com</p>
+        <p>Κοινωνικά δίκτυα: <a href="https://www.facebook.com/zozefina">Facebook</a></p>
+    </section>
 
     <footer>
-        <p>Josephine Paysanidou &copy; 2024</p>
+        <div class="container">
+            <p>Josephine Paysanidou &copy; 2024</p>
+        </div>
     </footer>
 </body>
 </html>
